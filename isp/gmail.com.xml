@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="gmail.com">
+    <domain>telus.net</domain>
+    <domain>angelbroking.com</domain>
+    <domain>conanp.gob.mx</domain>
+    <domain>moh.gov.my</domain>
+    <displayName>Google Mail</displayName>
+    <displayShortName>Google Mail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.gmail.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>true</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+  </emailProvider>
+</clientConfig>

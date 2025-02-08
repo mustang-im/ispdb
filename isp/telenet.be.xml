@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="telenet.be">
+    <domain>telenet.be</domain>
+    <domain>pandora.be</domain>
+    <displayName>Telenet</displayName>
+    <displayShortName>Telenet</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.telenet.be</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username/>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>smtp.telenet.be</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username/>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.telenet.be</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>smtp.telenet.be</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+  </emailProvider>
+</clientConfig>

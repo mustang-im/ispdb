@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="interia.pl">
+    <domain>interia.pl</domain>
+    <domain>interia.eu</domain>
+    <domain>poczta.fm</domain>
+    <domain>vip.interia.pl</domain>
+    <domain>intmail.pl</domain>
+    <domain>interia.com</domain>
+    <domain>interiowy.pl</domain>
+    <domain>adresik.net</domain>
+    <domain>pacz.to</domain>
+    <domain>pisz.to</domain>
+    <domain>ogarnij.se</domain>
+    <domain>hub.pl</domain>
+    <displayName>Interia</displayName>
+    <displayShortName>Interia</displayShortName>
+    <incomingServer type="imap">
+      <hostname>poczta.interia.pl</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>poczta.interia.pl</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>poczta.interia.pl</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>poczta.interia.pl</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>poczta.interia.pl</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>poczta.interia.pl</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>poczta.interia.pl</hostname>
+      <port>25</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="office365.com">
+    <domain>office365.com</domain>
+    <domain>oracle.com</domain>
+    <displayName>true</displayName>
+    <displayShortName>true</displayShortName>
+  </emailProvider>
+</clientConfig>

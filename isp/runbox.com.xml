@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="runbox.com">
+    <domain>runbox.com</domain>
+    <domain>runbox.no</domain>
+    <domain>rbx.run</domain>
+    <domain>rbx.email</domain>
+    <domain>offshore.rocks</domain>
+    <domain>mailhouse.biz</domain>
+    <displayName>Runbox</displayName>
+    <displayShortName>Runbox</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.runbox.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username/>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.runbox.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.runbox.com</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.runbox.com</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.runbox.com</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.runbox.com</hostname>
+      <port>25</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>

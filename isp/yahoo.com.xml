@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="yahoo.com">
+    <domain>yahoo.com</domain>
+    <domain>cox.net</domain>
+    <domain>ymail.com</domain>
+    <domain>frontier.com</domain>
+    <domain>frontiernet.net</domain>
+    <domain>rocketmail.com</domain>
+    <domain>verizon.net</domain>
+    <domain>aol.com</domain>
+    <domain>rogers.com</domain>
+    <displayName>Yahoo</displayName>
+    <displayShortName>Yahoo</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.mail.yahoo.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username/>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.mail.yahoo.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+  </emailProvider>
+</clientConfig>

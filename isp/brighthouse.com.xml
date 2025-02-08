@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="brighthouse.com">
+    <domain>brighthouse.com</domain>
+    <domain>bak.rr.com</domain>
+    <domain>bham.rr.com</domain>
+    <domain>cfl.rr.com</domain>
+    <domain>emore.rr.com</domain>
+    <domain>eufala.rr.com</domain>
+    <domain>indy.rr.com</domain>
+    <domain>mi.rr.com</domain>
+    <domain>panhandle.rr.com</domain>
+    <domain>tampabay.rr.com</domain>
+    <displayName>Spectrum</displayName>
+    <displayShortName>Spectrum</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.brighthouse.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username/>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.brighthouse.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.brighthouse.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.brighthouse.com</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.brighthouse.com</hostname>
+      <port>25</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>

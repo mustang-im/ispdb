@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<clientConfig version="1.2">
+  <emailProvider id="bell.net">
+    <domain>bell.net</domain>
+    <domain>bellaliant.net</domain>
+    <domain>sympatico.ca</domain>
+    <domain>nbnet.nb.ca</domain>
+    <displayName>Bell</displayName>
+    <displayShortName>Bell</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.bell.net</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pophm.sympatico.ca</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtphm.sympatico.ca</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
