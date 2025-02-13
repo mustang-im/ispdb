@@ -8,7 +8,7 @@
       <hostname>imap.mail.de</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -32,12 +32,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.mail.de</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://mail.de/de/hilfe/nachrichten/externe_e-mail_clients/pop3-imap_einstellungen"/>
   </emailProvider>
 </clientConfig>

@@ -25,6 +25,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.mailbox.org</hostname>
@@ -39,6 +40,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </outgoingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.mailbox.org</hostname>
@@ -47,12 +49,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.mailbox.org</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://kb.mailbox.org/en/private/faq-article/setup-other-e-mail-clients-manually/"/>
   </emailProvider>
 </clientConfig>

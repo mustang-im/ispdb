@@ -9,7 +9,7 @@
       <hostname>imap.seznam.cz</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -47,12 +47,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.seznam.cz</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://o-seznam.cz/napoveda/email/mohlo-by-se-hodit/postovni-programy-a-aplikace/"/>
   </emailProvider>
 </clientConfig>

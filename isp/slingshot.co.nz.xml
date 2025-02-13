@@ -46,12 +46,6 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.slingshot.co.nz</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://help.slingshot.co.nz/hc/en-us/articles/360000087074-How-to-set-up-Slingshot-email-on-your-computer-or-device"/>
   </emailProvider>
 </clientConfig>

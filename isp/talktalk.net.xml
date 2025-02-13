@@ -46,12 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.talktalk.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://community.talktalk.co.uk/t5/Articles/Email-settings-to-access-TalkTalk-emails/ta-p/2204399"/>
   </emailProvider>
 </clientConfig>

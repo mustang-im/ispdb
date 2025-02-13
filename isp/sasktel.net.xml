@@ -48,12 +48,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.sasktel.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://support.sasktel.com/app/answers/detail/a_id/15455/~/settings-for-sasktel.net-email"/>
   </emailProvider>
 </clientConfig>

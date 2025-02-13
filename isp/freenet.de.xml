@@ -8,13 +8,6 @@
       <hostname>mx.freenet.de</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <incomingServer type="imap">
-      <hostname>mx.freenet.de</hostname>
-      <port>143</port>
-      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
@@ -25,13 +18,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <incomingServer type="pop3">
-      <hostname>mx.freenet.de</hostname>
-      <port>110</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>mx.freenet.de</hostname>
       <port>587</port>
@@ -39,12 +25,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mx.freenet.de</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://kundenservice.freenet.de/artikel/1869"/>
   </emailProvider>
 </clientConfig>

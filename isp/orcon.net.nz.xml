@@ -46,12 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.orcon.net.nz</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://help.orcon.net.nz/hc/en-us/articles/115004407993-What-are-the-Orcon-POP-IMAP-SMTP-and-email-server-settings"/>
   </emailProvider>
 </clientConfig>

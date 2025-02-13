@@ -28,5 +28,21 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://support.bell.ca/internet/email/how-to-use-bell-mail?step=5#step5"/>
+    <!--Please note that access to your bell.net, bellaliant.net or sympatico.ca email via an email client like Outlook (Windows) or Apple Mail (macOS) is currently restricted to and will only work in the following countries:
+
+    Australia
+    Bahamas
+    Canada
+    France
+    Germany
+    Iceland
+    Ireland
+    Italy
+    Portugal
+    Saint Pierre and Miquelon
+    Spain
+    United Kingdom
+    United States-->
   </emailProvider>
 </clientConfig>

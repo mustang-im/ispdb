@@ -13,7 +13,7 @@
       <hostname>mail.runbox.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -44,12 +44,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.runbox.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://help.runbox.com/imap/"/>
   </emailProvider>
 </clientConfig>

@@ -39,12 +39,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.solcon.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.solcon.nl/klantenservice/?mt=internet-wifi&amp;st=installeren-instellen&amp;pq=e-mail-instellen&amp;sq=algemene-e-mail-instellingen-smtp-imap-pop&amp;tq=imap#"/>
+    <documentation url="https://www.solcon.nl/klantenservice/?mt=internet-wifi&amp;st=installeren-instellen&amp;pq=e-mail-instellen&amp;sq=algemene-e-mail-instellingen-smtp-imap-pop&amp;tq=pop3#"/>
   </emailProvider>
 </clientConfig>

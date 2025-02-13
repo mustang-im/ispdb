@@ -35,6 +35,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </outgoingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.mail.att.net</hostname>
@@ -43,12 +44,14 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.mail.att.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://www.att.com/support/article/email-support/KM1240308"/>
+    <documentation url="https://www.att.com/support/article/email-support/KM1010523/"/>
+    <documentation url="https://www.att.com/support/article/email-support/KM1086159"/>
+    <!--There’s a different SMTP server for IMAP and POP:
+- IMAP: smtp.mail.att.net	465 or 587
+- POP: outbound.att.net	465
+
+A plain account password might work also.
+OAuth is supported for supported apps also.-->
   </emailProvider>
 </clientConfig>

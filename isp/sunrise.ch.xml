@@ -39,19 +39,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp2.sunrise.ch</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp2.sunrise.ch</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.sunrise.ch/en/support/contracts-and-customer-information/e-mail-support/sunrise-mail"/>
+    <documentation url="https://www.sunrise.ch/en/support/internet/set-up-e-mail-program"/>
   </emailProvider>
 </clientConfig>

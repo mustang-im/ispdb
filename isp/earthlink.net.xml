@@ -8,7 +8,7 @@
       <hostname>imap.earthlink.net</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -16,7 +16,7 @@
       <port>143</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop.earthlink.net</hostname>
@@ -39,12 +39,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtpauth.earthlink.net</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://help.earthlink.net/portal/en/kb/articles/email-server-settings"/>
+    <!--Incoming POP3 settings are unique to each EarthLink domain.  The format is pop.(domain name).  The outgoing server is the same regardless of domain.-->
   </emailProvider>
 </clientConfig>

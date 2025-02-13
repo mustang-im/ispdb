@@ -8,7 +8,7 @@
       <hostname>imap.hccnet.nl</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -25,12 +25,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.hccnet.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://hcc.nl/kennis/kennis/nieuws/hcc-net-mail-update-en-oplossingen"/>
   </emailProvider>
 </clientConfig>

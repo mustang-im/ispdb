@@ -8,12 +8,26 @@
       <hostname>imap.online.nl</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
       <hostname>imap.online.nl</hostname>
       <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.online.nl</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.online.nl</hostname>
+      <port>110</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
@@ -32,5 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.online.nl/klantenservice/handige-info/webmail-van-onlinenl/"/>
   </emailProvider>
 </clientConfig>

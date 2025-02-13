@@ -8,7 +8,7 @@
       <hostname>imap.netcologne.de</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -39,12 +39,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.netcologne.de</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.netcologne.de/privatkunden/faq/mail-cloud/e-mail-einstellungen/wo-finde-ich-die-einstellungen-fuer-pop3-imap-und-smtp/?page=1"/>
   </emailProvider>
 </clientConfig>

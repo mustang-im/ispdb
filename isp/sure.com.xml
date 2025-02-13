@@ -47,12 +47,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>secure.emailsrvr.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://guernseyhelp.sure.com/hc/en-gb/articles/360000292000--About-Suremail-including-cwgsy-net"/>
   </emailProvider>
 </clientConfig>

@@ -9,13 +9,6 @@
       <hostname>securemail.a1.net</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <incomingServer type="imap">
-      <hostname>securemail.a1.net</hostname>
-      <port>143</port>
-      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
@@ -26,13 +19,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <incomingServer type="pop3">
-      <hostname>securemail.a1.net</hostname>
-      <port>110</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>securemail.a1.net</hostname>
       <port>465</port>
@@ -40,19 +26,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>securemail.a1.net</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>securemail.a1.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.a1.net/hilfe-kontakt/article/Vertrag-Services/E-Mail/E-Mail-einrichten/Wie-lauten-die-Servereinstellungen-f%C3%BCr-meine-A1-E-Mail-Adresse-/500000000007404/500000000027481"/>
   </emailProvider>
 </clientConfig>

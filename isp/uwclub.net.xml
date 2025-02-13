@@ -46,12 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.uwclub.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://help.uw.co.uk/article/broadband_and_landline/email/where-can-i-log-in-to-webmail"/>
   </emailProvider>
 </clientConfig>

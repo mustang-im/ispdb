@@ -8,7 +8,7 @@
       <hostname>imap.telkomsa.net</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -33,11 +33,22 @@
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.telkomsa.net</hostname>
+      <hostname>mail.telkomsa.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.telkomsa.net</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://images.telkom.co.za/backend-files/2024-05/Setup%20guide%20for%20outlook.pdf?VersionId=hKWk30ErsdM1TWZBQei_TuGy.SWPUtNH"/>
+    <documentation url="http://www.telkomsa.net/support/support_technical_email_faq.html"/>
+    <documentation url="http://www.telkomsa.net/support/sub/email/email_internet_mail.html"/>
+    <documentation url="https://images.telkom.co.za/backend-files/2024-05/Thunderbird%20Guide_0.pdf?VersionId=hBVF8hFpXpr8E7eUunXh3EudXEHibwJP"/>
   </emailProvider>
 </clientConfig>

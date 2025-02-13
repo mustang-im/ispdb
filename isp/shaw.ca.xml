@@ -8,7 +8,7 @@
       <hostname>imap.shaw.ca</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,12 +46,7 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.shaw.ca</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://support.shaw.ca/t5/internet-articles/about-pop-and-imap-email-server-settings/ta-p/6731"/>
+    <!--StartTLS: on (for Android devices only)-->
   </emailProvider>
 </clientConfig>

@@ -46,12 +46,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.terra.com.br</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://servicos.terra.com.br/para-voce/terra-mail/tutorial/configurando-outlook/?cdConvenio=CVTR00001947"/>
+    <documentation url="https://servicos.terra.com.br/para-voce/terra-mail/tutorial/configurando-ios/?cdConvenio=CVTR00001947"/>
   </emailProvider>
 </clientConfig>

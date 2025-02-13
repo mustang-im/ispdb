@@ -8,7 +8,7 @@
       <hostname>imap.yousee.dk</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,5 +46,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <enable visitURL="https://profil.yousee.dk/?ReturnUrl=https://ny-selvbetjening.yousee.dk/?icid=lp1"/>
+    <documentation url="https://yousee.dk/hjaelp/artikler/hvad-er-mine-serveroplysninger-til-yousee-mail"/>
   </emailProvider>
 </clientConfig>

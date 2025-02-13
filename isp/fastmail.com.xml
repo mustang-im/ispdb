@@ -9,7 +9,7 @@
       <hostname>imap.fastmail.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -47,12 +47,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.fastmail.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://www.fastmail.help/hc/en-us/articles/360058752854-App-passwords"/>
+    <documentation url="https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports"/>
   </emailProvider>
 </clientConfig>

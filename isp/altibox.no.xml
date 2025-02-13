@@ -6,9 +6,23 @@
     <displayName>Altibox</displayName>
     <displayShortName>Altibox</displayShortName>
     <incomingServer type="imap">
+      <hostname>mail.altibox.no</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
       <hostname>imap.altibox.no</hostname>
       <port>143</port>
       <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.altibox.no</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
@@ -20,18 +34,20 @@
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
+      <hostname>mail.altibox.no</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
       <hostname>smtp.altibox.no</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.altibox.no</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.altibox.no/nyepost2022/#smtp"/>
+    <documentation url="https://www.altibox.no/privat/kundeservice/e-post/epost-oppsett/"/>
   </emailProvider>
 </clientConfig>

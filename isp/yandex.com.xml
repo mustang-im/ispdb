@@ -10,7 +10,7 @@
       <hostname>imap.yandex.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -48,12 +48,8 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.yandex.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://id.yandex.ru/profile/apppasswords-list"/>
+    <documentation url="https://yandex.com/support/mail/mail-clients/others.html"/>
+    <!--Business accounts use the full email address as username-->
   </emailProvider>
 </clientConfig>

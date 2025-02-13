@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <clientConfig version="1.2">
-  <emailProvider id="t-email.hu ">
+  <emailProvider id="t-email.hu">
     <domain>t-email.hu</domain>
     <displayName>Telekom</displayName>
     <displayShortName>Telekom</displayShortName>
@@ -46,12 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.t-email.hu</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.telekom.hu/lakossagi/ugyintezes/gyakori-kerdesek/1287/hogyan_tudom_beallitani_t_email_hu_vegzodesu_e_mail_cimemet_mobil_keszulekemen_?appid=tudasbazis&amp;tudasbazis-eventType=8"/>
   </emailProvider>
 </clientConfig>

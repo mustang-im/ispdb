@@ -8,7 +8,7 @@
       <hostname>imap.free.fr</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -47,12 +47,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.free.fr</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://assistance.free.fr/articles/609"/>
   </emailProvider>
 </clientConfig>

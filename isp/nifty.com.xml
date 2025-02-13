@@ -8,12 +8,26 @@
       <hostname>imap.nifty.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
       <hostname>imap.nifty.com</hostname>
       <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.nifty.com</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.nifty.com</hostname>
+      <port>110</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
@@ -33,12 +47,10 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.nifty.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://support.nifty.com/support/member/idpass/id_username.htm"/>
+    <documentation url="https://mail.nifty.com/cs/mail-faq/detail/200326000044/"/>
+    <!--The SMTP will different for secondary emails:
+mb*.nifty.com,  smpt host name: mb.nifty.com
+Sp*.nifty.com, smpt host name: sp.nifty.com-->
   </emailProvider>
 </clientConfig>

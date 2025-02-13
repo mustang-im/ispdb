@@ -8,7 +8,7 @@
       <hostname>imap.tele2.nl</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,12 +46,6 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.tele2.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://forum.tele2.nl/e-mail-370/tele2-webmail-instellen-op-laptop-pc-tablet-of-mobiel-85229"/>
   </emailProvider>
 </clientConfig>

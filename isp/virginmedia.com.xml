@@ -49,12 +49,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.virginmedia.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://community.virginmedia.com/discussions/email/imap-password/5484787/replies/5485346"/>
+    <documentation url="https://www.virginmedia.com/help/broadband/manage-email-account#d44af37c-7788-48f7-845f-e46a8ff14d32"/>
   </emailProvider>
 </clientConfig>

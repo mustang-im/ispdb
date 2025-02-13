@@ -43,12 +43,7 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.iprimus.com.au</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://autoconfig.iprimus.com.au/"/>
+    <documentation url="https://support.iprimus.com.au/internet/email"/>
   </emailProvider>
 </clientConfig>

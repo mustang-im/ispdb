@@ -8,7 +8,7 @@
       <hostname>imap.earthlink.net</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,5 +46,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://help.earthlink.net/portal/en/kb/articles/email-server-settings"/>
   </emailProvider>
 </clientConfig>

@@ -50,12 +50,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.poczta.onet.pl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://pomoc.o2.pl/1login/hasla-do-aplikacji-zewnetrznej"/>
+    <documentation url="https://pomoc.poczta.onet.pl/baza-wiedzy/pop3-i-imap/"/>
   </emailProvider>
 </clientConfig>

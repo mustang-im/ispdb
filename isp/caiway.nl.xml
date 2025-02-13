@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <clientConfig version="1.2">
-  <emailProvider id="caiway.nl ">
+  <emailProvider id="caiway.nl">
     <domain>caiway.nl</domain>
     <displayName>Caiway</displayName>
     <displayShortName>Caiway</displayShortName>
@@ -8,7 +8,7 @@
       <hostname>imap.caiway.nl</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,12 +46,8 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.caiway.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.delta.nl/klantenservice/internet-en-wifi/e-mail/serverinstellingen/"/>
+    <!--SMTP for IMAP: mail.caiway.nl : 465
+SMTP for POP: smtp.caiway.nl : 587-->
   </emailProvider>
 </clientConfig>
