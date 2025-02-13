@@ -18,6 +18,20 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.qq.com</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.qq.com</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.qq.com</hostname>
       <port>465</port>
@@ -32,14 +46,7 @@
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
-      <authentication>OAuth2</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.qq.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://service.mail.qq.com/detail/0/339"/>
   </emailProvider>
 </clientConfig>

@@ -13,7 +13,7 @@
       <hostname>imap.vodafonemail.de</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -51,12 +51,9 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.vodafonemail.de</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.vodafone.de/hilfe/vodafone-e-mail-cloud.html?tab=servereinstellungen"/>
+    <!--Ports for inbox IMAP  SSL: 993 / TLS: 143
+Ports for inbox POP3 	SSL: 995 / TLS: 110
+Ports for outgoing mail 	SSL: 465 / TLS: 25 or 587-->
   </emailProvider>
 </clientConfig>

@@ -32,15 +32,7 @@
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
-      <authentication>password-encrypted</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.qwestoffice.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-      <authentication>password-encrypted</authentication>
-    </outgoingServer>
+    <documentation url="https://www.centurylink.com/home/help/internet/email/how-to-set-up-your-email-server-settings-to-go-through-pop-and-smtp.html"/>
   </emailProvider>
 </clientConfig>

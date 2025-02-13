@@ -46,12 +46,9 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.ozonline.com.au</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.australiaonline.au/help/email.html"/>
+    <!--IMAP Port: encrypted 993, plain 143
+POP Port: encrypted 995, plain 110
+SMTP: encrypted 465, plain 587-->
   </emailProvider>
 </clientConfig>

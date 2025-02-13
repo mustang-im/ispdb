@@ -8,7 +8,7 @@
       <hostname>imap.wp.pl</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,12 +46,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.wp.pl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://pomoc.wp.pl/1login/hasla-do-aplikacji-zewnetrznej"/>
+    <documentation url="https://pomoc.wp.pl/jak-skonfigurowac-program-pocztowy"/>
   </emailProvider>
 </clientConfig>

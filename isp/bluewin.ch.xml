@@ -26,6 +26,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3s.bluewin.ch</hostname>
@@ -48,5 +49,8 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.swisscom.ch/en/residential/help/e-mail/setup/swisscom-server-information.html#acc-CaBe0Q%5Bselected%5D%5B%5D=0&amp;acc-oiQ0rA%5Bselected%5D%5B%5D=1"/>
+    <documentation url="https://www.swisscom.ch/de/privatkunden/hilfe/e-mail/einrichten/res-computer.html#2:4"/>
+    <!--Password is different from the one for Swisscom-->
   </emailProvider>
 </clientConfig>

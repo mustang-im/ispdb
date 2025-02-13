@@ -4,11 +4,18 @@
     <domain>eastlink.ca</domain>
     <displayName>Eastlink</displayName>
     <displayShortName>Eastlink</displayShortName>
-    <incomingServer type="imap">
-      <hostname>mail.eastlink.ca</hostname>
-      <port>993</port>
+    <incomingServer type="pop3">
+      <hostname>pop.eastlink.ca</hostname>
+      <port>995</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.eastlink.ca</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
@@ -25,12 +32,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.eastlink.ca</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://my.eastlink.ca/customer-support/internet/setting-up-my-internet/configuring-my-email?__cf_chl_tk=Dk7pfJ1hdbJ78u3T6QffMnRRwlSMf4AYhJwCkO06B6o-1737940573-1.0.1.1-ftDfxiNG86Ag_WbJxK7AfHa_c1LwhLk3o5XoGeepD7k"/>
   </emailProvider>
 </clientConfig>

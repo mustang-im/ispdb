@@ -39,5 +39,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://aiuto.virgilio.it/articolo/mail/parametri-di-configurazione-per-il-client-di-posta/"/>
   </emailProvider>
 </clientConfig>

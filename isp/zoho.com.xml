@@ -5,28 +5,28 @@
     <displayName>Zoho Mail</displayName>
     <displayShortName>Zoho Mail</displayShortName>
     <incomingServer type="imap">
-      <hostname>imappro.zoho.com</hostname>
+      <hostname>imap.zoho.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
-      <hostname>imappro.zoho.com</hostname>
+      <hostname>imap.zoho.com</hostname>
       <port>143</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>poppro.zoho.com</hostname>
+      <hostname>pop.zoho.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>poppro.zoho.com</hostname>
+      <hostname>pop.zoho.com</hostname>
       <port>110</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
@@ -46,12 +46,9 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.zoho.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <enable visitURL="https://www.zoho.com/es-xl/mail/help/adminconsole/two-factor-authentication.html#alink5"/>
+    <documentation url="https://www.zoho.com/es-xl/mail/help/imap-access.html"/>
+    <documentation url="https://www.zoho.com/es-xl/mail/help/pop-access.html"/>
+    <!--For free users-->
   </emailProvider>
 </clientConfig>

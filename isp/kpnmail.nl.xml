@@ -64,12 +64,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.kpnmail.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.kpn.com/service/ugs/instellen-e-mail-laptop-pc"/>
+    <!--There seems to be a config for xs4all.nl by itself-->
   </emailProvider>
 </clientConfig>

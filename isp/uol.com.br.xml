@@ -18,6 +18,20 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.uol.com.br</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.uol.com.br</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtps.uol.com.br</hostname>
       <port>465</port>
@@ -32,12 +46,6 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtps.uol.com.br</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://email.uol.com.br/paginas-de-ajuda/sobre/configuracoes/imap-pop/como-configurar-imap-no-outlook-2007.jhtm"/>
   </emailProvider>
 </clientConfig>

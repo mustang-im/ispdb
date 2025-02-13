@@ -8,7 +8,7 @@
       <hostname>imap.cogeco.ca</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -46,12 +46,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.cogeco.ca</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://support.cogeco.ca/hc/en-ca/articles/360059891913-How-do-I-set-up-my-Cogeco-email-account-in-other-email-clients"/>
+    <!--For Cogeco email Ontario-->
   </emailProvider>
 </clientConfig>

@@ -9,14 +9,7 @@
       <hostname>imap.telenet.be</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <incomingServer type="imap">
-      <hostname>smtp.telenet.be</hostname>
-      <port>993</port>
-      <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -26,12 +19,35 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <incomingServer type="imap">
-      <hostname>smtp.telenet.be</hostname>
-      <port>143</port>
+    <incomingServer type="pop3">
+      <hostname>pop.telenet.be</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.telenet.be</hostname>
+      <port>110</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.telenet.be</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.telenet.be</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://www2.telenet.be/residential/nl/klantenservice/internet/e-mail/e-mail-instellen/"/>
+    <!--@pandora.be emails maybe changed to @telenet with same password-->
   </emailProvider>
 </clientConfig>

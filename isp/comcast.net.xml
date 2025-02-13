@@ -8,8 +8,9 @@
       <hostname>imap.comcast.net</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username/>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </incomingServer>
     <incomingServer type="imap">
       <hostname>imap.comcast.net</hostname>
@@ -24,6 +25,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.comcast.net</hostname>
@@ -46,12 +48,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.comcast.net</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.xfinity.com/support/articles/email-client-programs-with-xfinity-email"/>
+    <documentation url="https://forums.xfinity.com/conversations/email/comcast-imap-email-setup/66811db8ce90f861c763c697?commentId=6683d5cbfda2af2c09eb5ab6"/>
   </emailProvider>
 </clientConfig>

@@ -39,19 +39,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.mymagenta.at</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>mail.mymagenta.at</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.magenta.at/hilfe-service/services/hardwaresupport/device/lg/v30/topic/nachrichten/e-mail-konto-einrichten/choice/magenta-kabel-mail-imap/11"/>
   </emailProvider>
 </clientConfig>
