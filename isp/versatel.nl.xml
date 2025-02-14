@@ -5,6 +5,20 @@
     <domain>zonnet.nl</domain>
     <displayName>Zonnet</displayName>
     <displayShortName>Zonnet</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.versatel.nl</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.versatel.nl</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.versatel.nl</hostname>
       <port>995</port>
@@ -33,12 +47,7 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.versatel.nl</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://www.zonnet.nl/faq/Hoe%20voeg%20ik%20mijn%20e-mailaccount%20toe%20aan%20een%20e-mailprogramma"/>
+    <documentation url="https://www.zonnet.nl/support"/>
   </emailProvider>
 </clientConfig>

@@ -4,17 +4,24 @@
     <domain>nestgroup.net</domain>
     <displayName>Mimecast</displayName>
     <displayShortName>Mimecast</displayShortName>
-    <incomingServer type="pop3">
-      <hostname>eu-pop.mimecast.com</hostname>
-      <port>995</port>
+    <incomingServer type="imap">
+      <hostname>mail.mimecast.com</hostname>
+      <port>993</port>
       <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.mimecast.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>eu-pop.mimecast.com</hostname>
-      <port>110</port>
-      <socketType>STARTTLS</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
@@ -25,19 +32,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>eu-smtp-outbound-1.mimecast.com</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>eu-smtp-outbound-1.mimecast.com</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://community.mimecast.com/s/article/end-user-applications-mimecast-for-outlook-configure-pop3"/>
+    <!--There are different configs for different regions-->
   </emailProvider>
 </clientConfig>

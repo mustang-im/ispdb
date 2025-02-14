@@ -36,8 +36,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="https://pomoc.poczta.interia.pl/news-parametry-do-konfiguracji-programow-pocztowych"/>
-    <documentation url="nId"/>
-    <documentation url="2136275"/>
+    <documentation url="https://pomoc.poczta.interia.pl/news-konfiguracja-konta-imap,nId,2136407"/>
   </emailProvider>
 </clientConfig>
