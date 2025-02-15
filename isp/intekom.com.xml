@@ -4,6 +4,20 @@
     <domain>intekom.com</domain>
     <displayName>Telkom</displayName>
     <displayShortName>Telkom</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.intekom.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.intekom.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.intekom.com</hostname>
       <port>110</port>
@@ -25,5 +39,9 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://images.telkom.co.za/backend-files/2024-05/Setup%20guide%20for%20outlook.pdf?VersionId=hKWk30ErsdM1TWZBQei_TuGy.SWPUtNH"/>
+    <documentation url="http://www.telkomsa.net/support/support_technical_email_faq.html"/>
+    <documentation url="http://www.telkomsa.net/support/sub/email/email_internet_mail.html"/>
+    <documentation url="https://images.telkom.co.za/backend-files/2024-05/Thunderbird%20Guide_0.pdf?VersionId=hBVF8hFpXpr8E7eUunXh3EudXEHibwJP"/>
   </emailProvider>
 </clientConfig>

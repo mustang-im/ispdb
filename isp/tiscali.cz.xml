@@ -4,6 +4,20 @@
     <domain>tiscali.cz</domain>
     <displayName>tiscali.cz</displayName>
     <displayShortName>tiscali.cz</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.tiscali.cz</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.tiscali.cz</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.tiscali.cz</hostname>
       <port>995</port>
@@ -25,12 +39,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.tiscali.cz</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="http://home.tiscali.cz/dedekj/registrace_tiscali.html"/>
   </emailProvider>
 </clientConfig>

@@ -5,6 +5,13 @@
     <displayName>Aruba</displayName>
     <displayShortName>Aruba</displayShortName>
     <incomingServer type="imap">
+      <hostname>pop3s.pec.aruba.it</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
       <hostname>imaps.pec.aruba.it</hostname>
       <port>143</port>
       <socketType>STARTTLS</socketType>
@@ -17,6 +24,7 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3s.pec.aruba.it</hostname>
@@ -32,12 +40,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtps.pec.aruba.it</hostname>
-      <port>25</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </outgoingServer>
+    <documentation url="https://guide.pec.it/posta-pec/configurare-casella-pec/configurare-casella-pec-programma-posta.aspx"/>
   </emailProvider>
 </clientConfig>
